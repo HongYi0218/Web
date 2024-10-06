@@ -33,7 +33,7 @@ a{
 }
 .container-fluid{
     /* border: 1px solid #fff; */
-    width: 90%;
+    width: 85%;
     /* height: 100%; */
     margin: 0 auto;   
 }
@@ -53,6 +53,10 @@ a{
 .info{
     list-style: none;
 }
+.info i{
+    margin: 2px;
+    padding: 1px;
+}
 .language-select{
     position: absolute;
     left: 0;
@@ -64,24 +68,24 @@ a{
     justify-content: space-between;
 }
 .logo-img{
-    height: 30px;
-    width: 75px;
+    height: 40px;
+    width: 10%;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url("https://www.ikea.com.tw/webroot/img/logos/IKEA_logo.svg?v=1725355274");
 }
 .search-bar{
-    width: 50%;
+    width: 70%;
     height: 50px;
     border-radius: 25px;
     background-color: #efefef;
-    padding-top: 15px;
+    padding: 18px;
 }
 .search-bar input{
     width: 60%;
     border: none;
     background-color: #efefef;
-    margin-left: 25px;
+    margin-left: -30px;
 }
 .sign-up a{
     display: inline-block;
@@ -89,6 +93,7 @@ a{
     line-height: 40px;
 }
 .sign-up{
+    padding: 0 15px;
     display: inline-block;
     border-radius: 20px;
     background-color: #efefef;
@@ -98,6 +103,12 @@ a{
     height: 40px;
     background-color: #efefef;
     border-radius: 20px;
+}
+.icon i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .second-1-r{
     width: 250px;
@@ -125,11 +136,11 @@ a{
 .mb-90{
     margin-bottom: 90px;
 }
-.h-540{
-    height: 540px;
+.h-560{
+    height: 560px;
 }
 .h-800{
-    height: 580px;
+    height: 800px;
 }
 .h-470{
     height: 470px;
@@ -171,9 +182,6 @@ hr{
     /* border: 0.5px solid #ddd; */
     margin-right: 15px;
 }
-.last{
-    margin-right: 0;   
-}
 .mb-35
 {
     margin-bottom: 35px;
@@ -202,17 +210,15 @@ hr{
     height: 1px;
     background-color: #ddd;
 }
+.product-view-1{
+    height: 95%;
+}
 .product-view{
     height: 95%;
-    overflow-x: scroll;
-}
-.overflow-content-1{
-    width: 400%;
-    height: 100%;
+    overflow-x: hidden;
 }
 .product-card-1{
-    width: 25%;
-    height: 100%;
+    height: 532px;
 }
 .overflow-content-2{
     width: 160%;
@@ -229,6 +235,123 @@ hr{
 }
 .content-2-img{
     width: 100%;
-    height: 40%;
+    height: 50%;
     background-color: rgba(0, 0, 0, 0.3)
+}
+.content-text{
+    height: 50%;
+    padding-left: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+.siral{
+    font-size: 18px;
+}
+.heading{
+    font-size: 25px;
+}
+.cc{
+    font-size: 18px;
+}
+.link-button{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+.link-button i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Productcard{
+    height: 95%;
+    /* border: 1px solid #555; */
+}
+.overflow-content-3{
+    width: 220%;
+    height: 100%;
+}
+.product-card-3{
+    width: 15%;
+    height: 95%;
+    margin-right: 20px;
+    border: 1px solid #ddd;
+}
+.product-card-3-header{
+    margin: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heart-icon{
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+.product-card-3-image{
+    width: 100%;
+    height: 65%;
+}
+.discount-tag{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(255, 42, 42);
+}
+.discount-tag p{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+}
+.product-card-3-content .heading{
+    font-size: 20px;
+    font-weight: 900;
+    margin: 5px 0;
+}
+.product-card-3-content .des{
+    font-size: 20px;
+    font-weight: 100;
+    color: #777;
+    margin: 5px 0;
+}
+.product-card-3-content .price-tag{
+    font-size: 30px;
+    font-weight: 600;
+}
+.last{
+    margin-right: 0;  
+}
+#carousel{
+    position: absolute;
+    left: 0;
+    transition: all 0.3s;
+}
+#previous{
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ddd;
+}
+#next{
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ddd;
 }

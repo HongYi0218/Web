@@ -6,43 +6,46 @@
     <title>One-Page-Website</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <Header>
+    <header>
         <div class="top" id="top">
             <div class="container-fluid v-center">
                 <div class="language-select">
-                    <a href="!#" class="sf">EN |</a>
-                    <a href="!#" class="sf">中文</a>
+                    <a href="#"  onclick="event.preventDefault();" class="sf">EN |</a>
+                    <a href="#" onclick="event.preventDefault();" class="sf">中文</a>
                 </div>
                 <ul class="info flex">
                     <li class="items-8">
-                        <a href="!#" id="membership" class="sf">
-                            <!-- ::before icon -->
+                        <a href="#" onclick="event.preventDefault();" id="membership" class="sf">
+                            <i class="fa-solid fa-info"></i>
                             宜家卡
                         </a>
                     </li>
                     <li class="items-8">
-                        <a href="!#" id="enterprise" class="sf">
-                            <!-- ::before icon -->
+                        <a href="#" onclick="event.preventDefault();" id="enterprise" class="sf">
+                            <i class="fa-solid fa-info"></i>
                             IKEA企業業務
                         </a>
                     </li>
                     <li class="items-8">
-                        <a href="!#" id="infomation" class="sf">
-                            <!-- ::before icon -->
+                        <a href="#" onclick="event.preventDefault();" id="information" class="sf">
+                            <i class="fa-solid fa-location-dot"></i>
                             分店資訊
                         </a>
                     </li>
                     <li class="items-8">
-                        <a href="!#" id="restaurant"class="sf">
-                            <!-- ::before icon -->
+                        <a href="#" onclick="event.preventDefault();" id="restaurant"class="sf">
+                            <i class="fa-solid fa-utensils"></i>
                             瑞典餐廳
                         </a>
                     </li>
                     <li class="items-8 last">
-                        <a href="!#" id="sign-up"class="sf">
-                            <!-- ::before icon -->
+                        <a href="#" onclick="event.preventDefault();" id="sign-up"class="sf">
+                            <i class="fa-solid fa-info"></i>
                             官網會員註冊教學
                         </a>
                     </li>
@@ -53,51 +56,55 @@
             <div class="second-1 flex flex-jsb w-full">
                 <div class="logo-img"></div>
                 <div class="search-bar">
-                    <!-- ::before search icon -->
-                    <input type="text" placeholder="搜尋">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <label for="search" style="visibility: hidden;">搜尋</label>
+                    <input type="text" id="search" placeholder="搜尋">
                 </div>
                 <div class="second-1-r flex flex-jsb">
                     <div class="sign-up">
-                        <!-- ::before icon -->
-                        <a href="!#">登入或註冊</a>
+                        <a href="#" onclick="event.preventDefault();">
+                            <i class="fa-regular fa-user"></i>
+                            登入或註冊
+                        </a>
                     </div>
                     <div class="icon shoping-cart">
-                        <!-- ::before icon -->
+                        <i class="fa-solid fa-cart-shopping"></i>
                     </div>
                     <div class="icon menu">
-                        <!-- ::before icon -->
+                        <i class="fa-solid fa-bars"></i>
                     </div>
                 </div>
             </div>
             <div class="second-2 mt-35">
                 <ul class="flex flex-jfs">
                     <li class="items-30">
-                        <a href="!#">產品</a>
+                        <a href="#" onclick="event.preventDefault();">產品</a>
                     </li>
                     <li class="items-30">
-                        <a href="!#">空間</a>
+                        <a href="#" onclick="event.preventDefault();">空間</a>
                     </li>
                     <li class="items-30">
-                        <a href="!#">佈置靈感</a>
+                        <a href="#" onclick="event.preventDefault();">佈置靈感</a>
                     </li>
                     <li class="items-30">
-                        <a href="!#">新品專區</a>
+                        <a href="#" onclick="event.preventDefault();">新品專區</a>
                     </li>
                     <li class="items-30">
-                        <a href="!#">再創低價專區</a>
+                        <a href="#" onclick="event.preventDefault();">再創低價專區</a>
                     </li>
                     <li class="items-30 last">
-                        <a href="!#">最新活動</a>
+                        <a href="#" onclick="event.preventDefault();">最新活動</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </Header>
+    </header>
     <main>
         <div class="wrapper container-fluid mt-35">
-            <div class="h-540 mb-90 flex-c-jsb">
-                <div class="product-view">
-                    <div class="overflow-content-1 flex flex-jfs">
+            <div class="h-560 mb-90 flex-c-jsb">
+                <!-- use slick -->
+                <div class="product-view-1">
+                    <div class="slider">
                         <div class="product-card-1 c1"></div>
                         <div class="product-card-1 c2"></div>
                         <div class="product-card-1 c3"></div>
@@ -106,29 +113,290 @@
                 </div>
                 <div class="scroll-bar"></div>
             </div>
-            <div class="h-540 mb-90 flex-c-jsb">
+            <div class="h-560 mb-90 flex-c-jsb">
                 <div class="product-view">
-                    <div class="overflow-content-2 flex flex-jfs">
+                    <div class="overflow-content-2 flex flex-jfs" id="carousel">
                         <div class="product-card-2 c1">
-                            <div class="content-2 flex-c-jsb">
+                            <div class="content-2">
                                 <div class="content-2-img"></div>
                                 <div class="content-text">
                                     <p class="siral">Lorem, ipsum dolor.</p>
-                                    <h2><a href="!#">Lorem ipsum dolor sit amet consectetur.</a></h2>
-                                    <p class="cc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, ipsum quidem! Repellat quas vel iure?</p>
-                                    <div class="link-button"></div>
+                                    <h2 class="heading"><a href="!#">Lorem ipsum dolor sit.</a></h2>
+                                    <p class="cc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <div class="link-button"><i class="fa-solid fa-arrow-right fa-xl"></i></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product-card-2 c2"></div>
-                        <div class="product-card-2 c3"></div>
-                        <div class="product-card-2 c4"></div>
-                        <div class="product-card-2 c1 last"></div>
+                        <div class="product-card-2 c2">
+                            <div class="content-2">
+                                <div class="content-2-img"></div>
+                                <div class="content-text">
+                                    <p class="siral">Lorem, ipsum dolor.</p>
+                                    <h2 class="heading"><a href="!#">Lorem ipsum dolor sit.</a></h2>
+                                    <p class="cc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <div class="link-button"><i class="fa-solid fa-arrow-right fa-xl"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-2 c3">
+                            <div class="content-2">
+                                <div class="content-2-img"></div>
+                                <div class="content-text">
+                                    <p class="siral">Lorem, ipsum dolor.</p>
+                                    <h2 class="heading"><a href="!#">Lorem ipsum dolor sit.</a></h2>
+                                    <p class="cc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <div class="link-button"><i class="fa-solid fa-arrow-right fa-xl"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-2 c4">
+                            <div class="content-2">
+                                <div class="content-2-img"></div>
+                                <div class="content-text">
+                                    <p class="siral">Lorem, ipsum dolor.</p>
+                                    <h2 class="heading"><a href="!#">Lorem ipsum dolor sit.</a></h2>
+                                    <p class="cc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <div class="link-button"><i class="fa-solid fa-arrow-right fa-xl"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-2 c1 last">
+                            <div class="content-2">
+                                <div class="content-2-img"></div>
+                                <div class="content-text">
+                                    <p class="siral">Lorem, ipsum dolor.</p>
+                                    <h2 class="heading"><a href="!#">Lorem ipsum dolor sit.</a></h2>
+                                    <p class="cc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                    <div class="link-button"><i class="fa-solid fa-arrow-right fa-xl"></i></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <button id="previous"><i class="fa-solid fa-arrow-left"></i></button>
+                <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
                 <div class="scroll-bar"></div>
             </div>
-            <div class="kanban-view h-800 mb-90"></div>
+            <div class="h-800 mb-90 flex-c-jsb">
+                <h2 class="heading">精選品項專屬推薦</h2>
+                <div class="Productcard">
+                    <div class="product-view">
+                        <div class="overflow-content-3 flex flex-jfs">
+                            <div class="product-card-3">
+                                <div class="product-card-3-header">
+                                    <div class="product-compare">
+                                        <input type="checkbox" id="compare">
+                                        <label for="compare">比較</label>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </div>
+                                <div class="product-card-3-image c1">
+                                    <img src="#" alt="產品照片">
+                                    <div class="discount-tag">
+                                        <p>再創</p>
+                                        <p>低價</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-3-content">
+                                    <p class="heading">Brandname</p>
+                                    <p class="des">一些產品文字說明，關於配色、類型。</p>
+                                    <p class="price-tag">$10000</p>
+                                </div>
+                            </div>
+                            <div class="product-card-3">
+                                <div class="product-card-3-header">
+                                    <div class="product-compare">
+                                        <input type="checkbox" id="compare">
+                                        <label for="compare">比較</label>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </div>
+                                <div class="product-card-3-image c2">
+                                    <img src="#" alt="產品照片">
+                                    <div class="discount-tag">
+                                        <p>再創</p>
+                                        <p>低價</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-3-content">
+                                    <p class="heading">Brandname</p>
+                                    <p class="des">一些產品文字說明，關於配色、類型。</p>
+                                    <p class="price-tag">$10000</p>
+                                </div>
+                            </div>
+                            <div class="product-card-3">
+                                <div class="product-card-3-header">
+                                    <div class="product-compare">
+                                        <input type="checkbox" id="compare">
+                                        <label for="compare">比較</label>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </div>
+                                <div class="product-card-3-image c3">
+                                    <img src="#" alt="產品照片">
+                                    <div class="discount-tag">
+                                        <p>再創</p>
+                                        <p>低價</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-3-content">
+                                    <p class="heading">Brandname</p>
+                                    <p class="des">一些產品文字說明，關於配色、類型。</p>
+                                    <p class="price-tag">$10000</p>
+                                </div>
+                            </div>
+                            <div class="product-card-3">
+                                <div class="product-card-3-header">
+                                    <div class="product-compare">
+                                        <input type="checkbox" id="compare">
+                                        <label for="compare">比較</label>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </div>
+                                <div class="product-card-3-image c4">
+                                    <img src="#" alt="產品照片">
+                                    <div class="discount-tag">
+                                        <p>再創</p>
+                                        <p>低價</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-3-content">
+                                    <p class="heading">Brandname</p>
+                                    <p class="des">一些產品文字說明，關於配色、類型。</p>
+                                    <p class="price-tag">$10000</p>
+                                </div>   
+                            </div>
+                            <div class="product-card-3">
+                                <div class="product-card-3-header">
+                                    <div class="product-compare">
+                                        <input type="checkbox" id="compare">
+                                        <label for="compare">比較</label>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </div>
+                                <div class="product-card-3-image c1">
+                                    <img src="#" alt="產品照片">
+                                    <div class="discount-tag">
+                                        <p>再創</p>
+                                        <p>低價</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-3-content">
+                                    <p class="heading">Brandname</p>
+                                    <p class="des">一些產品文字說明，關於配色、類型。</p>
+                                    <p class="price-tag">$10000</p>
+                                </div>
+                            </div>
+                            <div class="product-card-3">
+                                <div class="product-card-3-header">
+                                    <div class="product-compare">
+                                        <input type="checkbox" id="compare">
+                                        <label for="compare">比較</label>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </div>
+                                <div class="product-card-3-image c2">
+                                    <img src="#" alt="產品照片">
+                                    <div class="discount-tag">
+                                        <p>再創</p>
+                                        <p>低價</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-3-content">
+                                    <p class="heading">Brandname</p>
+                                    <p class="des">一些產品文字說明，關於配色、類型。</p>
+                                    <p class="price-tag">$10000</p>
+                                </div>   
+                            </div>
+                            <div class="product-card-3">
+                                <div class="product-card-3-header">
+                                    <div class="product-compare">
+                                        <input type="checkbox" id="compare">
+                                        <label for="compare">比較</label>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </div>
+                                <div class="product-card-3-image c3">
+                                    <img src="#" alt="產品照片">
+                                    <div class="discount-tag">
+                                        <p>再創</p>
+                                        <p>低價</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-3-content">
+                                    <p class="heading">Brandname</p>
+                                    <p class="des">一些產品文字說明，關於配色、類型。</p>
+                                    <p class="price-tag">$10000</p>
+                                </div>
+                            </div>
+                            <div class="product-card-3">
+                                <div class="product-card-3-header">
+                                    <div class="product-compare">
+                                        <input type="checkbox" id="compare">
+                                        <label for="compare">比較</label>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </div>
+                                <div class="product-card-3-image c4">
+                                    <img src="#" alt="產品照片">
+                                    <div class="discount-tag">
+                                        <p>再創</p>
+                                        <p>低價</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-3-content">
+                                    <p class="heading">Brandname</p>
+                                    <p class="des">一些產品文字說明，關於配色、類型。</p>
+                                    <p class="price-tag">$10000</p>
+                                </div>   
+                            </div>
+                            <div class="product-card-3">
+                                <div class="product-card-3-header">
+                                    <div class="product-compare">
+                                        <input type="checkbox" id="compare">
+                                        <label for="compare">比較</label>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </div>
+                                <div class="product-card-3-image c1">
+                                    <img src="#" alt="產品照片">
+                                    <div class="discount-tag">
+                                        <p>再創</p>
+                                        <p>低價</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-3-content">
+                                    <p class="heading">Brandname</p>
+                                    <p class="des">一些產品文字說明，關於配色、類型。</p>
+                                    <p class="price-tag">$10000</p>
+                                </div>
+                            </div>
+                            <div class="product-card-3 last">
+                                <div class="product-card-3-header">
+                                    <div class="product-compare">
+                                        <input type="checkbox" id="compare">
+                                        <label for="compare">比較</label>
+                                    </div>
+                                    <div class="heart-icon"></div>
+                                </div>
+                                <div class="product-card-3-image c2">
+                                    <img src="#" alt="產品照片">
+                                    <div class="discount-tag">
+                                        <p>再創</p>
+                                        <p>低價</p>
+                                    </div>
+                                </div>
+                                <div class="product-card-3-content">
+                                    <p class="heading">Brandname</p>
+                                    <p class="des">一些產品文字說明，關於配色、類型。</p>
+                                    <p class="price-tag">$10000</p>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scroll-bar"></div>
+                </div>
+            </div>
             <div class="kanban-view h-340 mb-90"></div>
             <div class="kanban-view h-470 mb-50"></div>
             <div class="kanban-view h-450 mb-50"></div>
@@ -203,5 +471,39 @@
             <p>&copy;Inter IKEA Systems B.V. 2010&dash;2024</p>
         </div> 
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js" integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // slick 輪播功能
+        $(document).ready(function(){
+            $('.slider').slick({
+            });
+        });
+    </script>
+    <script>
+        let carousel = document.getElementById("carousel");
+        let position = 0; 
+
+        function nextPage(){
+            if (position > (-2590+1617)){
+                position -= 501.6;
+            }else{
+                position = (-2590+1617);
+            }
+            carousel.style.left = position + "px";
+        }
+        function previousPage(){
+            if (position < 0){
+                position += 501.6;
+            }else{
+                position = 0;
+            }
+            carousel.style.left = position + "px";
+        }
+
+        document.getElementById("next").addEventListener("click",nextPage);
+        document.getElementById("previous").addEventListener("click",previousPage);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

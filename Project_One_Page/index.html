@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -54,7 +57,7 @@
         </div>
         <div class="second container-fluid">
             <div class="second-1 flex flex-jsb w-full">
-                <div class="logo-img"></div>
+                <img src="./image/IKEA_logo.svg" alt="logo">
                 <div class="search-bar">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <label for="search" style="visibility: hidden;">搜尋</label>
@@ -101,14 +104,22 @@
     </header>
     <main>
         <div class="wrapper container-fluid mt-35">
-            <div class="h-560 mb-90 flex-c-jsb">
+            <div class="h-470 mb-90 flex-c-jsb">
                 <!-- use slick -->
                 <div class="product-view-1">
                     <div class="slider">
-                        <div class="product-card-1 c1"></div>
-                        <div class="product-card-1 c2"></div>
-                        <div class="product-card-1 c3"></div>
-                        <div class="product-card-1 c4"></div>
+                        <div class="product-card-1 c1">
+                            <img src="./image/1730116735_921.jpg" alt="product-card-1-1">
+                        </div>
+                        <div class="product-card-1 c2">
+                            <img src="./image/1728898924_103.jpg" alt="product-card-1-2">
+                        </div>
+                        <div class="product-card-1 c3">
+                            <img src="./image/1727695316_914.jpg" alt="product-card-1-3">
+                        </div>
+                        <div class="product-card-1 c4">
+                            <img src="./image/1713951310_199.jpg" alt="product-card-1-3">
+                        </div>
                     </div>
                 </div>
                 <div class="scroll-bar"></div>
@@ -116,58 +127,68 @@
             <div class="h-560 mb-90 flex-c-jsb">
                 <div class="product-view" id="width2">
                     <div class="overflow-content-2 flex flex-jfs" id="carousel2">
-                        <div class="product-card-2 c1">
+                        <div class="product-card-2" style="background-color: rgb(217, 190, 88);">
                             <div class="content-2">
-                                <div class="content-2-img"></div>
+                                <div class="content-2-img">
+                                    <img src="./image/1727834817502.jpg" alt="party picture">
+                                </div>
                                 <div class="content-text">
-                                    <p class="siral">Lorem, ipsum dolor.</p>
-                                    <h2 class="heading"><a href="!#">Lorem ipsum dolor sit.</a></h2>
-                                    <p class="cc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                    <div class="link-button"><i class="fa-solid fa-arrow-right fa-xl"></i></div>
+                                    <p class="siral black">FRÖJDA 系列</p>
+                                    <h2 class="heading"><a href="#" onclick="event.preventDefault();" class="black">是時候舉杯慶祝了</a></h2>
+                                    <p class="cc black">光彩奪目的限量系列，既溫暖又閃耀，只要小小預算就能盡情享受歡聚時光！</p>
+                                    <div class="link-button-b"><i class="fa-solid fa-arrow-right fa-xl white"></i></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product-card-2 c2">
+                        <div class="product-card-2" style="background-color: rgb(203, 179, 153);">
                             <div class="content-2">
-                                <div class="content-2-img"></div>
+                                <div class="content-2-img">
+                                    <img src="./image/1729564206068.jpg" alt="christmas">
+                                </div>
                                 <div class="content-text">
-                                    <p class="siral">Lorem, ipsum dolor.</p>
-                                    <h2 class="heading"><a href="!#">Lorem ipsum dolor sit.</a></h2>
-                                    <p class="cc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                    <div class="link-button"><i class="fa-solid fa-arrow-right fa-xl"></i></div>
+                                    <p class="siral white">VINTERFINT 聖誕佈置系列</p>
+                                    <h2 class="heading white"><a href="#" onclick="event.preventDefault();" class="white">一起慶祝美好節慶</a></h2>
+                                    <p class="cc white">全新聖誕系列加入北歐花朵和動物元素，輕鬆點綴空間，迎接溫暖聖誕！</p>
+                                    <div class="link-button-w"><i class="fa-solid fa-arrow-right fa-xl black"></i></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product-card-2 c3">
+                        <div class="product-card-2" style="background-color: rgb(152, 176, 14);">
                             <div class="content-2">
-                                <div class="content-2-img"></div>
+                                <div class="content-2-img">
+                                    <img src="./image/1727835004177.jpg" alt="forest">
+                                </div>
                                 <div class="content-text">
-                                    <p class="siral">Lorem, ipsum dolor.</p>
-                                    <h2 class="heading"><a href="!#">Lorem ipsum dolor sit.</a></h2>
-                                    <p class="cc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                    <div class="link-button"><i class="fa-solid fa-arrow-right fa-xl"></i></div>
+                                    <p class="siral black">SKOGSDUVA 系列</p>
+                                    <h2 class="heading"><a href="#" onclick="event.preventDefault();" class="black">歡迎來到魔幻的瑞典森林</a></h2>
+                                    <p class="cc black">一起探索大自然吧！把家變成一片魔幻的瑞典森林，一起玩樂、激發無限想像力!</p>
+                                    <div class="link-button-b"><i class="fa-solid fa-arrow-right fa-xl white"></i></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product-card-2 c4">
+                        <div class="product-card-2" style="background-color: rgb(125, 88, 69);">
                             <div class="content-2">
-                                <div class="content-2-img"></div>
+                                <div class="content-2-img">
+                                    <img src="./image/1718937732315.jpg" alt="office">
+                                </div>
                                 <div class="content-text">
-                                    <p class="siral">Lorem, ipsum dolor.</p>
-                                    <h2 class="heading"><a href="!#">Lorem ipsum dolor sit.</a></h2>
-                                    <p class="cc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                    <div class="link-button"><i class="fa-solid fa-arrow-right fa-xl"></i></div>
+                                    <p class="siral white">MITTZON辦公系列</p>
+                                    <h2 class="heading"><a href="#" onclick="event.preventDefault();" class="white">為實現你靈感自由的辦公家具</a></h2>
+                                    <p class="cc white">靈活耐用的升降桌、折疊桌及收納方案，輕鬆打造舒適空間，讓工作事半功倍！</p>
+                                    <div class="link-button-w"><i class="fa-solid fa-arrow-right fa-xl black"></i></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product-card-2 c1 last">
+                        <div class="product-card-2 last" style="background-color: rgb(110, 107, 107);">
                             <div class="content-2">
-                                <div class="content-2-img"></div>
+                                <div class="content-2-img">
+                                    <img src="./image/1727339258370.jpg" alt="30th anniversary">
+                                </div>
                                 <div class="content-text">
-                                    <p class="siral">Lorem, ipsum dolor.</p>
-                                    <h2 class="heading"><a href="!#">Lorem ipsum dolor sit.</a></h2>
-                                    <p class="cc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                                    <div class="link-button"><i class="fa-solid fa-arrow-right fa-xl"></i></div>
+                                    <p class="siral white">\ 歡慶IKEA台灣30週年 /</p>
+                                    <h2 class="heading"><a href="#" onclick="event.preventDefault();" class="white">AURTIENDE: 為IKEA愛好者設計</a></h2>
+                                    <p class="cc white">當IKEA經典logo遇上服飾配件，是最潮流的搭配。給熱愛IKEA的你，一起做自己。</p>
+                                    <div class="link-button-w"><i class="fa-solid fa-arrow-right fa-xl black"></i></div>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +198,7 @@
                 <button id="next-2"><i class="fa-solid fa-arrow-right"></i></button>
                 <div class="scroll-bar"></div>
             </div>
-            <div class="h-800 mb-90 flex-c-jsb">
+            <div class="h-650 mb-90 flex-c-jsb">
                 <h2 class="heading">精選品項專屬推薦</h2>
                 <div class="Productcard">
                     <div class="product-view" id="width3">
@@ -190,17 +211,16 @@
                                     </div>
                                     <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
                                 </div>
-                                <div class="product-card-3-image c1">
-                                    <img src="#" alt="產品照片">
-                                    <div class="discount-tag">
-                                        <p>再創</p>
-                                        <p>低價</p>
-                                    </div>
+                                <div class="product-card-3-image">
+                                    <img src="./image/0175610_PE328883_S4.webp" alt="產品照片">
                                 </div>
                                 <div class="product-card-3-content">
                                     <p class="heading">Brandname</p>
                                     <p class="des">一些產品文字說明，關於配色、類型。</p>
-                                    <p class="price-tag">$10000</p>
+                                    <span class="price-tag">
+                                        <span class="currency">$</span>
+                                        500
+                                    </span>
                                 </div>
                             </div>
                             <div class="product-card-3">
@@ -211,17 +231,16 @@
                                     </div>
                                     <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
                                 </div>
-                                <div class="product-card-3-image c2">
-                                    <img src="#" alt="產品照片">
-                                    <div class="discount-tag">
-                                        <p>再創</p>
-                                        <p>低價</p>
-                                    </div>
+                                <div class="product-card-3-image">
+                                    <img src="./image/0248337_PE386785_S4.webp" alt="產品照片">
                                 </div>
                                 <div class="product-card-3-content">
                                     <p class="heading">Brandname</p>
                                     <p class="des">一些產品文字說明，關於配色、類型。</p>
-                                    <p class="price-tag">$10000</p>
+                                    <span class="price-tag">
+                                        <span class="currency">$</span>
+                                        500
+                                    </span>
                                 </div>
                             </div>
                             <div class="product-card-3">
@@ -232,17 +251,16 @@
                                     </div>
                                     <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
                                 </div>
-                                <div class="product-card-3-image c3">
-                                    <img src="#" alt="產品照片">
-                                    <div class="discount-tag">
-                                        <p>再創</p>
-                                        <p>低價</p>
-                                    </div>
+                                <div class="product-card-3-image">
+                                    <img src="./image/0519027_PE641353_S4.webp" alt="產品照片">
                                 </div>
                                 <div class="product-card-3-content">
                                     <p class="heading">Brandname</p>
                                     <p class="des">一些產品文字說明，關於配色、類型。</p>
-                                    <p class="price-tag">$10000</p>
+                                    <span class="price-tag">
+                                        <span class="currency">$</span>
+                                        500
+                                    </span>
                                 </div>
                             </div>
                             <div class="product-card-3">
@@ -253,17 +271,16 @@
                                     </div>
                                     <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
                                 </div>
-                                <div class="product-card-3-image c4">
-                                    <img src="#" alt="產品照片">
-                                    <div class="discount-tag">
-                                        <p>再創</p>
-                                        <p>低價</p>
-                                    </div>
+                                <div class="product-card-3-image">
+                                    <img src="./image/0727225_PE735670_S4.webp" alt="產品照片">
                                 </div>
                                 <div class="product-card-3-content">
                                     <p class="heading">Brandname</p>
                                     <p class="des">一些產品文字說明，關於配色、類型。</p>
-                                    <p class="price-tag">$10000</p>
+                                    <span class="price-tag">
+                                        <span class="currency">$</span>
+                                        500
+                                    </span>
                                 </div>   
                             </div>
                             <div class="product-card-3">
@@ -274,17 +291,16 @@
                                     </div>
                                     <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
                                 </div>
-                                <div class="product-card-3-image c1">
-                                    <img src="#" alt="產品照片">
-                                    <div class="discount-tag">
-                                        <p>再創</p>
-                                        <p>低價</p>
-                                    </div>
+                                <div class="product-card-3-image">
+                                    <img src="./image/0767330_PE754069_S4.webp" alt="產品照片">
                                 </div>
                                 <div class="product-card-3-content">
                                     <p class="heading">Brandname</p>
                                     <p class="des">一些產品文字說明，關於配色、類型。</p>
-                                    <p class="price-tag">$10000</p>
+                                    <span class="price-tag">
+                                        <span class="currency">$</span>
+                                        500
+                                    </span>
                                 </div>
                             </div>
                             <div class="product-card-3">
@@ -295,17 +311,16 @@
                                     </div>
                                     <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
                                 </div>
-                                <div class="product-card-3-image c2">
-                                    <img src="#" alt="產品照片">
-                                    <div class="discount-tag">
-                                        <p>再創</p>
-                                        <p>低價</p>
-                                    </div>
+                                <div class="product-card-3-image">
+                                    <img src="./image/0949689_PE799948_S4.webp" alt="產品照片">
                                 </div>
                                 <div class="product-card-3-content">
                                     <p class="heading">Brandname</p>
                                     <p class="des">一些產品文字說明，關於配色、類型。</p>
-                                    <p class="price-tag">$10000</p>
+                                    <span class="price-tag">
+                                        <span class="currency">$</span>
+                                        500
+                                    </span>
                                 </div>   
                             </div>
                             <div class="product-card-3">
@@ -316,17 +331,16 @@
                                     </div>
                                     <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
                                 </div>
-                                <div class="product-card-3-image c3">
-                                    <img src="#" alt="產品照片">
-                                    <div class="discount-tag">
-                                        <p>再創</p>
-                                        <p>低價</p>
-                                    </div>
+                                <div class="product-card-3-image">
+                                    <img src="./image/1115932_PE872311_S4.webp" alt="產品照片">
                                 </div>
                                 <div class="product-card-3-content">
                                     <p class="heading">Brandname</p>
                                     <p class="des">一些產品文字說明，關於配色、類型。</p>
-                                    <p class="price-tag">$10000</p>
+                                    <span class="price-tag">
+                                        <span class="currency">$</span>
+                                        500
+                                    </span>
                                 </div>
                             </div>
                             <div class="product-card-3">
@@ -337,17 +351,16 @@
                                     </div>
                                     <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
                                 </div>
-                                <div class="product-card-3-image c4">
-                                    <img src="#" alt="產品照片">
-                                    <div class="discount-tag">
-                                        <p>再創</p>
-                                        <p>低價</p>
-                                    </div>
+                                <div class="product-card-3-image">
+                                    <img src="./image/0950157_PE800190_S4.webp" alt="產品照片">
                                 </div>
                                 <div class="product-card-3-content">
                                     <p class="heading">Brandname</p>
                                     <p class="des">一些產品文字說明，關於配色、類型。</p>
-                                    <p class="price-tag">$10000</p>
+                                    <span class="price-tag">
+                                        <span class="currency">$</span>
+                                        500
+                                    </span>
                                 </div>   
                             </div>
                             <div class="product-card-3">
@@ -358,17 +371,16 @@
                                     </div>
                                     <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
                                 </div>
-                                <div class="product-card-3-image c1">
-                                    <img src="#" alt="產品照片">
-                                    <div class="discount-tag">
-                                        <p>再創</p>
-                                        <p>低價</p>
-                                    </div>
+                                <div class="product-card-3-image">
+                                    <img src="./image/0949712_PE799986_S4.webp" alt="產品照片">
                                 </div>
                                 <div class="product-card-3-content">
                                     <p class="heading">Brandname</p>
                                     <p class="des">一些產品文字說明，關於配色、類型。</p>
-                                    <p class="price-tag">$10000</p>
+                                    <span class="price-tag">
+                                        <span class="currency">$</span>
+                                        500
+                                    </span>
                                 </div>
                             </div>
                             <div class="product-card-3 last">
@@ -379,17 +391,16 @@
                                     </div>
                                     <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
                                 </div>
-                                <div class="product-card-3-image c2">
-                                    <img src="#" alt="產品照片">
-                                    <div class="discount-tag">
-                                        <p>再創</p>
-                                        <p>低價</p>
-                                    </div>
+                                <div class="product-card-3-image">
+                                    <img src="./image/1194665_PE902051_S4.webp" alt="產品照片">
                                 </div>
                                 <div class="product-card-3-content">
                                     <p class="heading">Brandname</p>
                                     <p class="des">一些產品文字說明，關於配色、類型。</p>
-                                    <p class="price-tag">$10000</p>
+                                    <span class="price-tag">
+                                        <span class="currency">$</span>
+                                        500
+                                    </span>
                                 </div>  
                             </div>
                         </div>
